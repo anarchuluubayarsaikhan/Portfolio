@@ -4,7 +4,7 @@ import { Navigation } from "./navigation";
 
 export function Header() {
   return (
-    <div className="grid grid-flow-col justify-between mx-4 my-4">
+    <div className="grid grid-flow-col justify-between w-4/5 m-auto">
       <div>
         <Logo/>
       </div>
