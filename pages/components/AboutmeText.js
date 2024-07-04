@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function AboutmeText() {
     return (
-      <>
+      <div className="flex flex-col gap-4">
         <div className="text-gray-900 text-3xl font-semibold">
             Curious about me? Here you have it:
         </div>
@@ -26,6 +26,6 @@ export function AboutmeText() {
         <div className="text-gray-600 font-normal text-base">
             One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite
         </div>
-      </>
+      </div>
     )
 }
