@@ -1,12 +1,12 @@
-import { AboutmeBtnImg } from "./AboutmeBtnImj";
-import { AboutmeText } from "./Aboutmetext";
+import { AboutmeImgText } from "./AboutmeImjText";
+import { Aboutmebutton } from "./Aboutmebutton";
 
 
 export function Aboutme() {
     return (
-      <div className="flex flex-col gap-12 xl:grid xl: grid-cols-2 xl:gap-48 w-4/5 m-auto my-24">
-            <AboutmeBtnImg/>
-            <AboutmeText/>
+      <div className="flex flex-col gap-6  xl:flex-col xl:gap-12  w-4/5 m-auto my-24">
+            <Aboutmebutton/>
+            <AboutmeImgText/>
       </div>
     )
 }

@@ -1,12 +1,11 @@
-
 import { Experience } from "./Experience";
 import { Name } from "./Introduction";
 
-export function ExperienceName() {
+export function Experiencename () {
     return (
-      <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2">
             <Name/>
             <Experience/>
       </div>
-    )
+    );
 }

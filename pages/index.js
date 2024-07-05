@@ -1,6 +1,7 @@
 
 import { Aboutjob} from "./components/Aboutjob";
 import { Aboutme } from "./components/Aboutme";
+import Allexperiences from "./components/Allexperience";
 import { Header } from "./components/header";
 import { Skills } from "./components/skills";
 
@@ -12,6 +13,7 @@ export default function Home() {
       <Aboutjob/>
       <Aboutme/>
       <Skills/>
+      <Allexperiences/>
     </main>
   );
 }
