@@ -4,6 +4,7 @@ import { Aboutme } from "./components/Aboutme";
 import Allexperiences from "./components/Allexperience";
 import { Header } from "./components/header";
 import { Skills } from "./components/skills";
+import { Works } from "./components/works";
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Aboutme/>
       <Skills/>
       <Allexperiences/>
+      <Works/>
     </main>
   );
 }
