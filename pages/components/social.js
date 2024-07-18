@@ -1,20 +1,24 @@
-import { SlSocialGithub } from "react-icons/sl";
-import { TbBrandTwitter } from "react-icons/tb";
-import { FiFigma } from "react-icons/fi";
+import { FiGithub } from "react-icons/fi";
+import { FaTwitter } from "react-icons/fa";
+import { FaFigma } from "react-icons/fa";
+
+const icons= [
+    {link: "https://github.com/",
+     icon: <FiGithub className="h-6 w-6"/>
+    },
+    {link: "https://x.com/",
+        icon: <FaTwitter className="h-6 w-6"/>
+    },
+    {link: "https://www.figma.com",
+        icon: <FaFigma className="h-6 w-6"/>
+    }
+]
+
 export function Social () {
     return (
         <div className="flex gap-2">
-            <div>
-                <SlSocialGithub className="h-6 w-6"/>
-            </div>
-            <div>
-                <TbBrandTwitter className="h-6 w-6"/>
-            </div>
-            <div>
-                <FiFigma className="h-6 w-6"/>
-            </div>
-        </div>
-        
-
-    );
+            {icons.map((icon)=> (
+            <div>{icon.icon}</div>))}
+         </div>  
+        );
 }

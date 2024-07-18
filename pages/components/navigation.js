@@ -1,11 +1,13 @@
 import { MdOutlineWbSunny } from "react-icons/md";
+
+const navs= ["About", "Work", "Testimonials", "Contact"]
 export function Navigation() {
     return (
       <div className="text-gray-600 font-semibold text-base flex gap-6 items-center">
-        <div> About</div> 
-        <div> Work</div> 
-        <div> About</div> 
-        <div> Contact</div> 
+        <div className="flex gap-6">
+          {navs.map((nav) => 
+            <p>{nav}</p>)}
+        </div>
         <div>|</div>
         <div className="flex gap-4 items-center">
           <div><MdOutlineWbSunny className="h-8 w-8 "/></div>

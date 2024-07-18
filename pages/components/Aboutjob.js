@@ -4,7 +4,7 @@ import { Profile } from "./profile";
 
 export function Aboutjob() {
     return (
-      <div className="flex flex-col gap-12 xl:grid xl: grid-flow-col xl:justify-between xl:gap-32 w-4/5 m-auto my-24">
+      <div className="flex flex-col gap-12  xl:flex-row-reverse xl:gap-32 my-24 xl:">
             <Profile/>
             <AboutjobText/>
       </div>

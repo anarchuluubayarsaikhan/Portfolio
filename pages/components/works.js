@@ -26,11 +26,11 @@ export function Works () {
             </div>
              <div>
             {works.map((work, index) => 
-              (<div key={index} className=" xl:flex xl:flex-row xl:gap-6">
-                    <div className="bg-gray-50 rounded-t-xl p-8 max-w-full m-auto xl:max-w-[576px]">
+              (<div key={index} className="xl:flex xl:flex-row xl:gap-6 ">
+                    <div className={`bg-gray-50 rounded-t-xl p-8 max-w-full m-auto xl:max-w-[576px] ${index%2==0? "order-2" : "order-1"}`}>
                         <img src={work.image} className="m-auto"/>
                     </div>
-                    <div className="flex flex-col gap-6 p-8 xl:max-w-[576px] items-start xl:p-12">
+                    <div className={`flex flex-col gap-6 p-8 xl:max-w-[576px] items-start xl:p-12 ${index%2!==0? "order-2" : "order-1"}`}>
                         <div className="text-gray-900 text-xl font-semibold">{work.skillname}</div>
                         <div className="text-gray-600 text-base font-normal">{work.text}</div>
                         <div className="flex flex-wrap gap-2">

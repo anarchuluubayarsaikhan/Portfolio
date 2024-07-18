@@ -4,7 +4,7 @@ import { Social } from "./social";
 
 export function AboutjobText() {
     return (
-      <div className="flex flex-col gap-12 xl: order-1">
+      <div className="flex flex-col gap-12 xl:order-1 flex-1 ">
             <Experiencename/>
             <Myavailability/>
             <Social/>

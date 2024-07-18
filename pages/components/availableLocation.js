@@ -3,7 +3,7 @@ import { Location } from "./location";
 
 export function Myavailability() {
     return (
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 ">
             <Location/>
             <Availability/>
       </div>

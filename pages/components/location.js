@@ -6,7 +6,7 @@ export function Location () {
                 <IoLocationOutline className="h-6 w-6"/>
             </div>
             <div className="text-gray-900 font [Inter] text-base font-normal mr-4 ml-4 mt-2">
-                Ulaanbaatar, Mongolia
+                Ahmedabad, India
             </div> 
         </div>
     );
