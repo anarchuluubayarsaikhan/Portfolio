@@ -4,7 +4,7 @@ import { Navigation } from "./navigation";
 
 export function Header() {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between xl: max-w-screen-xl xl:pl-4 xl:pr-4 xl:m-auto">
       <div>
         <Logo/>
       </div>

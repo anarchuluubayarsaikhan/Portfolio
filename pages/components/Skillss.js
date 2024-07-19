@@ -32,7 +32,7 @@ const skills = [
 
 export function Skills() {
     return (
-      <div>
+      <div className="xl: max-w-screen-xl  xl:m-auto py-24 px-20 xl:mt-24 xl:mb-24">
             <div className="flex flex-col gap-4  my-24 ">
                 <button className="bg-gray-200 w-20 h-7 rounded-xl text-gray-600 text-sm font-medium m-auto py-1 px-5">Skills</button>
                 <div className="text-gray-600 font-normal text-lg text-center">The skills, tools and technologies I am 
