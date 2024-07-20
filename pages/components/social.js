@@ -1,6 +1,7 @@
 import { FiGithub } from "react-icons/fi";
 import { FaTwitter } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
+import Link from "next/link";
 
 const icons= [
     {link: "https://github.com/",
@@ -18,7 +19,7 @@ export function Social () {
     return (
         <div className="flex gap-2">
             {icons.map((icon)=> (
-            <div>{icon.icon}</div>))}
+            <Link href={icon.link}>{icon.icon}</Link>))}
          </div>  
         );
 }

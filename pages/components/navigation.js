@@ -1,12 +1,29 @@
+import Link from "next/link";
 import { MdOutlineWbSunny } from "react-icons/md";
 
-const navs= ["About", "Work", "Testimonials", "Contact"]
+const navs= [
+    {name: "About",
+      link:"https://nextjs.org/docs/messages/react-hydration-error"
+    }, 
+    {name:"Work",
+    link:"https://nextjs.org/docs/messages/react-hydration-error"
+    }, 
+    {name:"Testimonials",
+    link:"https://nextjs.org/docs/messages/react-hydration-error"
+    }, 
+    {name:"Contact",
+    link:"https://nextjs.org/docs/messages/react-hydration-error"
+    }
+]
 export function Navigation() {
     return (
       <div className="text-gray-600 font-semibold text-base flex gap-6 items-center">
         <div className="flex gap-6">
           {navs.map((nav) => 
-            <p>{nav}</p>)}
+            <Link href={nav.link}>
+                {nav.name}
+            </Link>
+            )}
         </div>
         <div>|</div>
         <div className="flex gap-4 items-center">

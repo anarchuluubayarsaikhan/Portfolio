@@ -1,5 +1,6 @@
-import { Experience } from "./Experience";
-import { Name } from "./Introduction";
+
+import { Experience } from "./experience";
+import { Name } from "./introduction";
 
 export function Experiencename () {
     return (

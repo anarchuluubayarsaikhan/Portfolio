@@ -11,7 +11,7 @@ import { Works } from "./components/works";
 
 export default function Home() {
   return (
-    <main className="p-4">
+    <main className="m-auto w-full xl: max-w-screen-xl">
       <Header/>
       <Aboutjob/>
       <Aboutme/>

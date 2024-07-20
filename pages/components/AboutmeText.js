@@ -3,10 +3,10 @@ import Link from "next/link";
 export function AboutmeText() {
     return (
       <div className="flex flex-col gap-4 xl:flex-1">
-        <div className="text-gray-900 text-3xl font-semibold">
+        <div className="text-gray-900 text-3xl font-semibold dark:text-dark-900">
             Curious about me? Here you have it:
         </div>
-        <div className="text-gray-600 font-normal text-base">
+        <div className="text-gray-600 font-normal text-base dark:text-dark-600">
             I'm a passionate, <Link href="https://www.figma.com/@shahsagarm" className="underline">self-proclaimed designer</Link> who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.
             <br/>
             I began my journey as a web developer in 2015, and since then, I've continued to grow and evolve as a developer, taking on new challenges and learning the latest technologies along the way. Now, in my early thirties, 7 years after starting my web development journey, I'm building cutting-edge web applications using modern technologies such as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more.
@@ -17,13 +17,13 @@ export function AboutmeText() {
             <br/>
             Finally, some quick bits about me.
         </div>
-        <ul className="text-gray-600 font-normal text-base list-disc grid grid-cols-2 ml-4"> 
+        <ul className="text-gray-600 font-normal text-base list-disc grid grid-cols-2 ml-4 dark:text-dark-600"> 
             <li>B.E. in Computer Engineering</li>
             <li>Full time freelancer</li>
             <li>Avid learner</li>
             <li>Aspiring indie hacker</li>
         </ul>
-        <div className="text-gray-600 font-normal text-base">
+        <div className="text-gray-600 font-normal text-base dark:text-dark-600">
             One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { Aboutmeimg } from "./Aboutmeimg";
-import { AboutmeText } from "./Aboutmetext";
+import { AboutmeText } from "./AboutmeText";
 
 
 export function AboutmeImgText() {
