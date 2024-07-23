@@ -16,12 +16,15 @@ module.exports = {
         "dark-default": `#030712`,
         "dark-half": `#111827`,
         "dark-200": `#374151`,
-        "dark-900": `#F9FAFB1A`,
+        "dark-900": `#F9FAFB`,
+        "dark-100": `#1F2937`,
       },
       colors:{
         "dark-600": `#D1D5DB`,
         "dark-900": `#F9FAFB`,
-        "dark-700": `#E5E7EB`,
+        "dark-700": `#030712`,
+        "dark-50": `#111827`,
+        "dark-70": `#E5E7EB`,
       }
 
     },

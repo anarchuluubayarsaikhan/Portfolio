@@ -40,8 +40,8 @@ export function Skills() {
                 </div>
             </div>
             <div className="grid grid-cols-3 gap-y-4  xl:grid-cols-8 xl:grid-rows-2 xl:gap-x-[22] xl:gap-y-12">
-                {skills.map((skill) => (
-                   <div className="flex flex-col place-items-center gap-2 dark:text-dark-600">
+                {skills.map((skill,index) => (
+                   <div className="flex flex-col place-items-center gap-2 dark:text-dark-600" key={index}>
                         <img src={skill.picture}/>
                         <div>{skill.name}</div>
                    </div>))}

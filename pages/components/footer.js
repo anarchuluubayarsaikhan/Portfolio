@@ -15,14 +15,14 @@ export function Footer() {
         </div>
         <div className="flex flex-col gap-4 place-items-center">
             <div className="flex gap-5">
-                <CiMail className="w-8 h-8"/>
+                <CiMail className="w-8 h-8 dark:text-white"/>
                 <Link href="mailto:reachsagarshah@gmail.com" className="text-gray-900 font-semibold text-4xl dark:text-dark-900">reachsagarshah@gmail.com</Link>
-                <PiFilesDuotone className="w-8 h-8"/>
+                <PiFilesDuotone className="w-8 h-8 dark:text-white"/>
             </div>
             <div className="flex gap-5">
-                <FiPhone className="w-8 h-8"/>
+                <FiPhone className="w-8 h-8 dark:text-white"/>
                 <p className="text-gray-900 font-semibold text-4xl dark:text-dark-900">+91 8980500565</p>
-                <PiFilesDuotone className="w-8 h-8"/>
+                <PiFilesDuotone className="w-8 h-8 dark:text-white"/>
             </div>
         </div>
         <div className="flex flex-col gap-2 place-items-center">
