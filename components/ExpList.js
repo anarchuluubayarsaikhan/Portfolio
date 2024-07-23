@@ -1,4 +1,5 @@
-import Card from "../Cards"
+import Card from "./Cards"
+
 const experiences =[
     {
         title:"Sr. Frontend Developer",
