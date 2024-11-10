@@ -34,7 +34,6 @@ export function Skills() {
     return (
       <div className="xl: max-w-screen-xl  xl:m-auto py-16 px-4 xl:py-24 xl:px-20 dark:bg-gray-950 flex flex-col gap-6 xl:gap-12">
             <div className="flex flex-col gap-4">
-                <button className="bg-gray-200 w-20 h-7 rounded-xl text-gray-600 text-sm font-medium m-auto py-1 px-5 dark:bg-dark-200 dark:text-dark-600">Skills</button>
                 <div className="text-gray-600 font-normal text-lg text-center dark:text-dark-600">The skills, tools and technologies I am 
                      <br/>really good at:
                 </div>

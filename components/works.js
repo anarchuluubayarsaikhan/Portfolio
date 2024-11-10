@@ -21,7 +21,7 @@ export function Works () {
     return (
        <div className=" flex flex-col gap-6  xl: max-w-screen-xl xl:m-auto py-16 px-4 xl:py-24 xl:px-20 dark:bg-gray-950">
             <div className="flex flex-col gap-4 place-items-center">
-                <span className="bg-gray-200 rounded-xl py-1 px-5 w-fit dark:bg-dark-200 dark:text-dark-600">Work</span>
+                {/* <span className="bg-gray-200 rounded-xl py-1 px-5 w-fit dark:bg-dark-200 dark:text-dark-600">Work</span> */}
                 <div className="text-gray-600 font-normal text-xl">Some of the noteworthy projects I have built:</div>
             </div>
              <div className="flex flex-col gap-6 xl:gap-12">

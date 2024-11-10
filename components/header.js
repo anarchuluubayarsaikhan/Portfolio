@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Logo } from "./Logo";
 import { Menu } from "./menu";
-import { Navigation } from "./navigation";
+// import { Navigation } from "./navigation";
 
 export function Header() {
   return (
@@ -10,7 +10,7 @@ export function Header() {
           <Logo/>
       </Link>
       <div className="hidden xl:block">
-        <Navigation/>
+        {/* <Navigation/> */}
       </div>
       <div className="block xl:hidden">
         <Menu/>
