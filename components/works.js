@@ -1,47 +1,95 @@
-const works = [
-    {image : "/allpics/Cardpic.jpg",
-     skillname: "Fiskill",
-     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-     buttons: [ "React", "Next.js","Typescript", "Nest.js","PostreSQL","Tailwindcss", "Figma","Cypress","Storybook","Git"]
-    },
-    {image : "/allpics/Cardpic.jpg",
-    skillname: "Fiskill",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-    buttons: [ "React", "Next.js","Typescript", "Nest.js","PostreSQL","Tailwindcss", "Figma","Cypress","Storybook","Git"]
-    },
-    {image : "/allpics/Cardpic.jpg",
-    skillname: "Fiskill",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-    buttons: [ "React", "Next.js","Typescript", "Nest.js","PostreSQL","Tailwindcss", "Figma","Cypress","Storybook","Git"]
-    },
-]
+import Image from "next/image";
+import Link from "next/link";
 
-
-export function Works () {
-    return (
-       <div className=" flex flex-col gap-6  xl: max-w-screen-xl xl:m-auto py-16 px-4 xl:py-24 xl:px-20 dark:bg-gray-950">
-            <div className="flex flex-col gap-4 place-items-center">
-                {/* <span className="bg-gray-200 rounded-xl py-1 px-5 w-fit dark:bg-dark-200 dark:text-dark-600">Work</span> */}
-                <div className="text-gray-600 font-normal text-xl">Some of the noteworthy projects I have built:</div>
-            </div>
-             <div className="flex flex-col gap-6 xl:gap-12">
-            {works.map((work, index) => 
-              (<div key={index} className="xl:flex xl:flex-row xl:gap-6 rounded-xl shadow-md">
-                    <div className={`bg-gray-50 rounded-t-xl px-8 py-8 xl:flex-1 max-w-full m-auto xl:max-w-[576px] ${index%2==0? "order-2" : "order-1"}`}>
-                        <img src={work.image} height={384} width={480} className="m-auto w-full"/>
-                    </div>
-                    <div className={`flex flex-col gap-6 p-8 xl:max-w-[576px] xl:flex-1 items-start xl:p-12 ${index%2!==0? "order-2" : "order-1"}`}>
-                        <div className="text-gray-900 text-xl font-semibold dark:text-dark-900">{work.skillname}</div>
-                        <div className="text-gray-600 text-base font-normal dark:text-dark-600">{work.text}</div>
-                        <div className="flex flex-wrap gap-2">
-                            {work.buttons.map((button, index) => (
-                            <span className="bg-gray-200 rounded-xl  text-gray-600 font-medium text-sm text-center px-5 py-1 dark:bg-dark-200 dark:text-dark-600" key={index}>{button}</span>
-                        ))}
-                        </div>
-                    </div>
+export function Works() {
+  const projects = [
+    {
+      image: "/allpics/amidos.png",
+      link: "https://amidos.vercel.app/",
+      name:"AMIDO's",
+      description:
+        "Typescript, Next.js, MongoDB, ShadcnUI, Algoliasearch, Cloudinary, Usegeolocation, Nodemailer, Google map",
+      text: "ХООЛ ХҮРГЭЛТ",
+    },
+    {
+      image: "/allpics/expense.png",
+      link: "https://expense-frontend-theta.vercel.app/",
+      name:"EXPENSE TRACKER",
+      description:
+      "Javascript, Next.js, Node.js, Postgre, Neon.tech ",
+      text: "ОРЛОГО ЗАРЛАГА ХӨТЛӨХ ВЕБ АПП",
+    },
+    {
+      image: "/allpics/pinetour.png",
+      link: "https://pinetour-qs47.vercel.app/",
+      name:"PINETOUR",
+      description: "HTML, CSS",
+      text: "LANDING PAGE",
+    },
+    {
+      image: "/allpics/todo.png",
+      link: "https://tod-osimpleapp.vercel.app/",
+      name:"TODO WEB APP",
+      description: "Javascript, Bulma",
+      text: "ХИЙХ ЗҮЙЛСИЙН ЖАГСААЛТ ГАРГАХ",
+    },
+    {
+      image: "/allpics/blog.png",
+      link: "https://blog-fv3qx0ue1-anarchuluu-bayarsaikhans-projects.vercel.app/",
+      description: "Javascript,Next.js, Tailwind, Dev.to",
+      name:"BLOG",
+      text: "БЛОГ",
+    },
+    {
+      image: "/allpics/gogo.png",
+      link: "https://gogo-delta-six.vercel.app/",
+      description: "HTML, CSS",
+      name:"GOGO",
+      text: "GOGO MЭДЭЭНИЙ САЙТ",
+    },
+  ];
+  return (
+    <div className="text-center py-20 bg-black" id="projects">
+      <Link
+        href="https://github.com/anarchuluubayarsaikhan"
+        className="text-white font-bold text-2xl"
+      >
+       MИНИЙ ХИЙСЭН ТӨСЛҮҮД
+      </Link>
+      <div className=" w-full flex justify-center">
+        <div className="grid grid-cols-2 py-12 gap-x-4 gap-y-8">
+          {projects.map((project) => (
+            <div>
+                 <Link href={project.link} target="blank">
+              <div className="relative group w-[400px] h-[200px] rounded-lg hover:overflow-hidden  border border-gray-300 shadow-xl  ">
+              
+                  <Image
+                    src={project.image}
+                    width={300}
+                    height={200}
+                    className="hover:scale-125 w-full h-full aspect-video object-cover"
+                  />
+               
+                <div className="absolute inset-0 bg-black bg-opacity-90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl">
+                  <div className="absolute inset-0 flex flex-col items-center justify-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-1000 ease-in-out">
+                    <p className="text-white text-base font-semibold text-center">
+                     {project.name}
+                    </p>
+                    <p className="text-[#767776] text-xs font-semibold text-center">
+                     {project.text}
+                    </p>
+                  </div>
                 </div>
-              ))}
+              </div>
+              </Link>
+              <div className="max-w-[400px] flex flex-wrap text-[#767776]  font-medium text-sm mt-2 text-justify">
+                {project.description}
+              </div>
+              
+            </div>
+          ))}
         </div>
-       </div>
-    );
+      </div>
+    </div>
+  );
 }
