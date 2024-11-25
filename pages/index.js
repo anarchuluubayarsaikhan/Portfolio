@@ -14,8 +14,8 @@ export default function Home() {
       <Intro/>
        <Tech/>
       <Works/>
-      {/* <Education/>
-      <Contact/>
+      <Education/>
+      {/* <Contact/>
       <Scroll/>  */}
       </div>
     </main>
