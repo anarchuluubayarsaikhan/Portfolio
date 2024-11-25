@@ -30,10 +30,10 @@ export function Education() {
   
        <div
       style={galaxyStyle}
-      className="flex flex-col gap-6 justify-between  bg-black hover:border py-12 px-6 lg:px-3 overflow-x-hidden"
+      className="flex flex-col gap-6 justify-between  bg-black hover:border py-12 px-6 lg:px-16 overflow-x-hidden"
       id="education"
     >
-      <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-6">
+      <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-6  ">
         <h1 className="text-xl flex flex-col gap-4">
           <p className="text-white font-bold">БОЛОВСРОЛ</p>
           <div className="flex lg:gap-3 gap-1 ">
