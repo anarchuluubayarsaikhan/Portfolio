@@ -36,7 +36,7 @@ export function Education() {
       <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-6">
         <h1 className="text-xl flex flex-col gap-4">
           <p className="text-white font-bold">БОЛОВСРОЛ</p>
-          <div className="flex gap-3 ">
+          <div className="flex lg:gap-3 gap-1 ">
             <div className="bg-black border border-[#320F85] hover:border-white max-w-full lg:max-w-[700px] rounded-lg p-6 hover:cursor-pointer">
               <p className="text-white text-lg">Хүний их эмч /бакалавр/</p>
               <p className="text-[#767776] text-base">АШУҮИС</p>
