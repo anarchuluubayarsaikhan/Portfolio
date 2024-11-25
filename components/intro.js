@@ -14,16 +14,16 @@ export function Intro() {
           </Link>
           
         </div>
-        <div className="lg:flex-1 flex  flex-col justify-center px-16 lg:px-0 items-center py-12 lg:py-0 order-1 lg:order-2">
-          <div className="p-1 hover:bg-gradient-to-t  hover:from-gray-400 hover:via-blue-950 rounded-lg hover:cursor-pointer overflow-hidden lg:max-w-[300px] max-h-[600px] w-full">
-            <Image
-              src="/allpics/profile.jpg"
-              width={300}
-              height={600}
-              className="rounded-lg w-full h-full aspect-auto object-cover"
-            />
-          </div>
-        </div>
+        <div className="lg:flex-1 flex flex-col justify-center px-16 lg:px-0 items-center py-12 lg:py-0 order-1 lg:order-2">
+  <div className="p-1 hover:bg-gradient-to-t hover:from-gray-400 hover:via-blue-950 rounded-lg hover:cursor-pointer overflow-hidden lg:max-w-[300px] max-w-full w-full">
+    <Image
+      src="/allpics/profile.jpg"
+      width={300}
+      height={600}
+      className="rounded-lg w-full h-auto object-contain"
+    />
+  </div>
+</div>
       </div>
   );
 }
