@@ -8,7 +8,8 @@ import { Scroll } from "@/components/scroll";
 
 export default function Home() {
   return (
-    <main className="m-auto w-full">
+    <main>
+      <div className="m-auto w-full">
       <Header />
       <Intro/>
       <Tech/>
@@ -16,6 +17,7 @@ export default function Home() {
       <Education/>
       <Contact/>
       <Scroll/>
+      </div>
     </main>
   );
 }
