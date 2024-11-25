@@ -41,7 +41,7 @@ export function Tech() {
      
         </div>
       </div>
-      <div className="flex gap-4">
+      <div className="flex gap-4 px-6 lg:px-0">
             {techs.map((tech)=>
             <Image
             src={tech.source}
