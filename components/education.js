@@ -30,7 +30,7 @@ export function Education() {
   
        <div
       style={galaxyStyle}
-      className="flex flex-col gap-6 justify-between  bg-black hover:border py-12 px-6 lg:px-16 overflow-x-hidden"
+      className="flex flex-col gap-6 justify-between  bg-black hover:border py-12 px-6 lg:px-28 overflow-x-hidden"
       id="education"
     >
       <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-6  ">
