@@ -37,17 +37,17 @@ export function Education() {
         <h1 className="text-xl flex flex-col gap-4">
           <p className="text-white font-bold">БОЛОВСРОЛ</p>
           <div className="flex gap-3 ">
-            <div className="bg-black border border-[#320F85] hover:border-white max-w-[700px] rounded-lg p-6 hover:cursor-pointer">
+            <div className="bg-black border border-[#320F85] hover:border-white lg:max-w-[700px] rounded-lg p-6 hover:cursor-pointer">
               <p className="text-white text-lg">Хүний их эмч /бакалавр/</p>
               <p className="text-[#767776] text-base">АШУҮИС</p>
               <p className="text-[#767776] text-base">2014-2021</p>
             </div>
-            <div className="text-white bg-black border border-[#320F85] hover:border-white max-w-[700px] rounded-lg p-6 hover:cursor-pointer">
+            <div className="text-white bg-black border border-[#320F85] hover:border-white lg:max-w-[700px] rounded-lg p-6 hover:cursor-pointer">
               <p className="text-white text-lg">Бүрэн дунд боловсрол</p>
               <p className="text-[#767776] text-base">Шинэ Mонгол сургууль</p>
               <p className="text-[#767776] text-base">2012-2014</p>
             </div>
-            <div className="text-white border border-[#320F85] hover:border-white bg-black max-w-[700px] rounded-lg p-6 hover:cursor-pointer">
+            <div className="text-white border border-[#320F85] hover:border-white bg-black lg:max-w-[700px] rounded-lg p-6 hover:cursor-pointer">
               <p className="text-white text-lg">Бүрэн бус дунд боловсрол</p>
               <p className="text-[#767776] text-base">Радуга сургууль</p>
               <p className="text-[#767776] text-base">2003-2012</p>
@@ -76,7 +76,7 @@ export function Education() {
         <h1 className="text-xl flex flex-col gap-4">
           <p className="text-white font-bold">АЖЛЫН ТУРШЛАГА</p>
           <div className=" flex flex-col gap-4">
-            <div className="text-white border border-[#320F85] hover:border-white bg-black max-w-[700px] rounded-lg py-6 pl-6 pr-6 hover:cursor-pointer">
+            <div className="text-white border border-[#320F85] hover:border-white bg-black lg:max-w-[700px] rounded-lg py-6 pl-6 pr-6 hover:cursor-pointer">
               <p className="text-white text-lg">Case manager</p>
               <p className="text-[#767776] text-base">
                 Zevtronic LLC /2023.11-2024.11/
@@ -90,7 +90,7 @@ export function Education() {
                 </li>
               </ul>
             </div>
-            <div className="text-white border border-[#320F85] hover:border-white bg-black max-w-[700px] rounded-lg p-6 hover:cursor-pointer">
+            <div className="text-white border border-[#320F85] hover:border-white bg-black lg:max-w-[700px] rounded-lg p-6 hover:cursor-pointer">
               <p className="text-white text-lg">
                 Дотрын анагаах ухааны резидент эмч
               </p>
@@ -106,7 +106,7 @@ export function Education() {
         </h1>
         <h1 className="text-xl flex flex-col gap-4">
           <p className="text-white font-bold">Чадвар</p>
-          <div className="border border-[#320F85] hover:border-white bg-black max-w-72 rounded-lg p-6 hover:cursor-pointer">
+          <div className="border border-[#320F85] hover:border-white bg-black lg:max-w-72 rounded-lg p-6 hover:cursor-pointer">
             <ul className="text-white text-base list-disc pl-4">
               <li>Баг удирдан зохион байгуулах чадвартай</li>
               <li>Хариуцлагатай</li>
