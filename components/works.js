@@ -52,16 +52,16 @@ export function Works() {
     <div className="text-center py-20 bg-black" id="projects">
       <Link
         href="https://github.com/anarchuluubayarsaikhan"
-        className="text-white font-bold text-2xl"
+        className="text-white font-bold text-3xl"
       >
        MИНИЙ ХИЙСЭН ТӨСЛҮҮД
       </Link>
       <div className=" w-full flex justify-center">
-        <div className="grid grid-cols-2 py-12 gap-x-4 gap-y-8">
+        <div className="grid grid-cols-1  lg:grid-cols-2 py-12 gap-x-4 lg:gap-y-8 gap-y-24 px-6 lg:px-0">
           {projects.map((project) => (
             <div>
                  <Link href={project.link} target="blank">
-              <div className="relative group w-[400px] h-[200px] rounded-lg hover:overflow-hidden  border border-gray-300 shadow-xl  ">
+              <div className="relative group w-full h-full lg:max-w-[400px] lg:h-[200px] rounded-lg hover:overflow-hidden  border border-gray-300 shadow-xl  ">
               
                   <Image
                     src={project.image}
@@ -82,7 +82,7 @@ export function Works() {
                 </div>
               </div>
               </Link>
-              <div className="max-w-[400px] flex flex-wrap text-[#767776]  font-medium text-sm mt-2 text-justify">
+              <div className="lg:max-w-[400px] flex flex-wrap text-[#767776]  font-medium text-lg lg:text-sm mt-2 text-justify">
                 {project.description}
               </div>
               

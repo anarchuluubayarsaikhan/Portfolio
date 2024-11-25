@@ -27,12 +27,13 @@ export function Education() {
   };
 
   return (
-    <div
+  
+       <div
       style={galaxyStyle}
-      className="flex flex-col gap-6 justify-between  bg-black hover:border py-12 px-32"
+      className="flex flex-col gap-6 justify-between  bg-black hover:border py-12 px-6 lg:px-32"
       id="education"
     >
-      <div className="flex justify-between gap-6">
+      <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-6">
         <h1 className="text-xl flex flex-col gap-4">
           <p className="text-white font-bold">БОЛОВСРОЛ</p>
           <div className="flex gap-3 ">
@@ -55,7 +56,7 @@ export function Education() {
         </h1>
         <h1 className="text-xl flex flex-col gap-4">
           <p className="text-white font-bold">ГАДААД ХЭЛНИЙ МЭДЛЭГ</p>
-          <div className="border border-[#320F85] hover:border-white bg-black max-w-72 rounded-lg p-6">
+          <div className="border border-[#320F85] hover:border-white bg-black max-w-72 rounded-lg p-6 hover:cursor-pointer">
             <div className="flex gap-2 items-center">
               <p className="text-white text-lg">Англи хэл:</p>
               <p className="text-[#767776] text-base">C1 түвшин</p>
@@ -71,7 +72,7 @@ export function Education() {
           </div>
         </h1>
       </div>
-      <div className="flex justify-between gap-6">
+      <div className="flex flex-col lg:flex-row justify-between gap-6">
         <h1 className="text-xl flex flex-col gap-4">
           <p className="text-white font-bold">АЖЛЫН ТУРШЛАГА</p>
           <div className=" flex flex-col gap-4">
@@ -105,7 +106,7 @@ export function Education() {
         </h1>
         <h1 className="text-xl flex flex-col gap-4">
           <p className="text-white font-bold">Чадвар</p>
-          <div className="border border-[#320F85] hover:border-white bg-black max-w-72 rounded-lg p-6">
+          <div className="border border-[#320F85] hover:border-white bg-black max-w-72 rounded-lg p-6 hover:cursor-pointer">
             <ul className="text-white text-base list-disc pl-4">
               <li>Баг удирдан зохион байгуулах чадвартай</li>
               <li>Хариуцлагатай</li>
@@ -118,5 +119,6 @@ export function Education() {
         </h1>
       </div>
     </div>
+   
   );
 }

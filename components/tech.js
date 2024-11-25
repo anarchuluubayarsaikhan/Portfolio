@@ -15,8 +15,8 @@ export function Tech() {
     ]
 
   return (
-    <div className="h-screen  py-32 bg-gray-50 flex flex-col justify-between items-center" id="tech" >
-      <div className="flex gap-40 justify-center items-center">
+    <div className="h-screen gap-6 lg:gap-0 py-16 lg:py-32 bg-gray-50 flex flex-col justify-between items-center" id="tech" >
+      <div className="flex lg:gap-40 flex-col lg:flex-row gap-10 justify-center items-center">
         <div>
           <div className="flex gap-2"><Image src="/allpics/pinecone.png" width={86} height={86} className="rounded-lg"/>
           <div className="text-start">
@@ -40,14 +40,13 @@ export function Tech() {
             </ul>
      
         </div>
-        <div className="flex-1"></div>
       </div>
       <div className="flex gap-4">
             {techs.map((tech)=>
             <Image
             src={tech.source}
             alt="Spinning Image 1"
-            className="w-12 h-12 object-cover spin-hover hover:cursor-pointer"
+            className="lg:w-12 lg:h-12 w-8 h-8 object-cover spin-hover hover:cursor-pointer"
             width={12}
             height={12}
           />
