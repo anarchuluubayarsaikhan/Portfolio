@@ -12,11 +12,11 @@ export default function Home() {
       <div className="lg:m-auto w-full">
       {/* <Header /> */}
       <Intro/>
-      {/* <Tech/>
-      <Works/>
+       <Tech/>
+      {/* <Works/>
       <Education/>
       <Contact/>
-      <Scroll/> */}
+      <Scroll/>  */}
       </div>
     </main>
   );
