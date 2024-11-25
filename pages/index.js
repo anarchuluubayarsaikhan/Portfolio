@@ -10,13 +10,13 @@ export default function Home() {
   return (
     <main>
       <div className="lg:m-auto w-full">
-      <Header />
+      {/* <Header /> */}
       <Intro/>
-      <Tech/>
+      {/* <Tech/>
       <Works/>
       <Education/>
       <Contact/>
-      <Scroll/>
+      <Scroll/> */}
       </div>
     </main>
   );
