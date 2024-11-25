@@ -59,7 +59,7 @@ export function Works() {
       <div className=" w-full flex justify-center">
         <div className="grid grid-cols-1  lg:grid-cols-2 py-12 gap-x-4 lg:gap-y-8 gap-y-24 px-6 lg:px-0">
           {projects.map((project) => (
-            <div>
+            <div key={project.name}>
                  <Link href={project.link} target="blank">
               <div className="relative group w-full h-full lg:max-w-[400px] lg:h-[200px] rounded-lg hover:overflow-hidden  border border-gray-300 shadow-xl  ">
               

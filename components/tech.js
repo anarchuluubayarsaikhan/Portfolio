@@ -49,6 +49,7 @@ export function Tech() {
             className="lg:w-12 lg:h-12 w-8 h-8 object-cover spin-hover hover:cursor-pointer"
             width={12}
             height={12}
+            key={tech.source}
           />
             )}
       
