@@ -15,7 +15,7 @@ export function Tech() {
     ]
 
   return (
-    <div className="h-screen gap-6 lg:gap-0 py-16 lg:py-32 bg-gray-50 flex flex-col justify-between items-center" id="tech" >
+    <div className="lg:h-screen gap-6 lg:gap-0 py-16 lg:py-32 bg-gray-50 flex flex-col justify-between items-center" id="tech" >
       <div className="flex lg:gap-40 flex-col lg:flex-row gap-10 justify-center items-center">
         <div>
           <div className="flex gap-2"><Image src="/allpics/pinecone.png" width={86} height={86} className="rounded-lg"/>
