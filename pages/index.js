@@ -9,7 +9,7 @@ import { Scroll } from "@/components/scroll";
 export default function Home() {
   return (
     <main>
-      <div className="m-auto w-full">
+      <div className="lg:m-auto w-full">
       <Header />
       <Intro/>
       <Tech/>
