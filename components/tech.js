@@ -26,7 +26,7 @@ export function Tech() {
           </div>
           </div>
         </div>
-        <div className="max-w-[400px] flex flex-wrap text-justify self-end gap-3">
+        <div className="max-w-[400px] flex flex-wrap text-justify self-end gap-3 px-6 lg:px-0">
             <p className="text-black font-bold text-2xl">Tech stacks</p>
             <ul className="list-disc text-gray-600 font-medium text-lg pl-4">
               <li>Typescript, Javascript, HTML, CSS</li>
