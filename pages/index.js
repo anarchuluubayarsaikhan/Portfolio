@@ -8,22 +8,8 @@ import { Education } from "@/components/education";
 import { Scroll } from "@/components/scroll";
 
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 1000); 
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <main>
-      {isLoading ? (
-        <div className="flex justify-center items-center h-screen">
-          <div className="loader">Loading...</div>
-        </div>
-      ) : (
         <div className="lg:m-auto w-full">
           <Header />
           <Intro />
@@ -33,7 +19,6 @@ export default function Home() {
           <Contact />
           <Scroll />
         </div>
-      )}
     </main>
   );
 }
